@@ -5,7 +5,11 @@ _bsd() {
 }
 
 _linux() {
-	pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'
+    if pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes; then
+        echo "Muted"
+    else
+        pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'
+    fi
 }
 
 case $(uname) in
