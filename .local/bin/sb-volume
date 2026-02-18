@@ -1,0 +1,18 @@
+#!/bin/sh
+
+_bsd() {
+	sndioctl -n output.level | sed 's/0\.//' | sed 's/.$/%/' | sed 's/\.//'
+}
+
+_linux() {
+    if pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes; then
+        echo "Muted"
+    else
+        pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'
+    fi
+}
+
+case $(uname) in
+	Linux) _linux ;;
+	*BSD) _bsd ;;
+esac

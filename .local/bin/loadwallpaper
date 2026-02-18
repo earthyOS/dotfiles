@@ -1,0 +1,8 @@
+#!/bin/env bash
+
+paper_file=$(cat $HOME/.cache/wallpaper)
+
+xwallpaper --stretch $paper_file
+wal -i $paper_file
+cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
+xdotool key super+F5
