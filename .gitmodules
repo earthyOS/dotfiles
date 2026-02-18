@@ -1,0 +1,3 @@
+[submodule ".local/share/earthyOS"]
+	path = .local/share/earthyOS
+	url = https://github.com/earthyOS/scripts
