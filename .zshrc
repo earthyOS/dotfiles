@@ -105,7 +105,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #Auto start
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.local/share/earthOS"
+export PATH="$PATH:$HOME/.local/share/earthyOS"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY=$(tty)
 export QT_QPA_PLATFORMTHEME=qt5ct
