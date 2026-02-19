@@ -14,5 +14,8 @@ pipewire &
 /usr/bin/pipewire-pulse &
 /usr/bin/wireplumber &
 
+# Wallpaper & Theming
+loadwallpaper &
+
 # Starts DWM
 exec dbus-launch --exit-with-session dwm
