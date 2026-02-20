@@ -36,5 +36,5 @@ let &t_EI = "\<Esc>[2 q"
 let &t_SR = "\<Esc>[4 q"
 
 " Vim Wiki
-let g:vimwiki_list = [{'path': '~/doxs/vimwiki/',
+let g:vimwiki_list = [{'path': '~/dox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': 'md'}]
