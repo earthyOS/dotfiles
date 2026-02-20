@@ -1,0 +1,3 @@
+#!/bin/sh
+
+yt-dlp --no-update --no-playlist --extractor-args "youtube:player_js_version=actual" -o "%(channel)s - %(title)s - [%(id)s].%(ext)s" $(echo $1 | sed 's|inv.nadeko.net|www.youtube.com|')
