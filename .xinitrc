@@ -2,6 +2,8 @@
 
 # Start background apps:
 nm-applet &
+#pasystray &
+mullvad-vpn &
 dwmblocks &
 xrdb $HOME/.Xresources &
 xrandr --auto &
