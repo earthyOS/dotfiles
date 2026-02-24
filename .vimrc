@@ -5,7 +5,7 @@ set title
 set laststatus=0
 set mouse=a
 set nohlsearch
-set cursorline
+"set cursorline
 set number
 set nocompatible
 set encoding=utf-8
