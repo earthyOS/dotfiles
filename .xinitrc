@@ -3,6 +3,7 @@
 # Start background apps:
 nm-applet &
 #pasystray &
+syncthing --no-browser &
 mullvad-vpn &
 dwmblocks &
 xrdb $HOME/.Xresources &
