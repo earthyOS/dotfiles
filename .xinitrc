@@ -2,7 +2,7 @@
 
 # Start background apps:
 nm-applet &
-#pasystray &
+pasystray &
 syncthing --no-browser &
 mullvad-vpn &
 dwmblocks &
