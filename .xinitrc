@@ -7,7 +7,7 @@ syncthing --no-browser &
 mullvad-vpn &
 dwmblocks &
 xrdb $HOME/.Xresources &
-xrandr --auto &
+xrandr --output VGA-1 --off --output HDMI-1 --off --output DP-1 --off --output HDMI-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-2 --off &
 picom -b
 dunst &
 setxkbmap -layout us,ru -variant ,phonetic -option grp:alt_shift_toggle &
