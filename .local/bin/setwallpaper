@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-paper_file=$(find $HOME/.local/share/wallpapers -type f | sed '/.git/d' | nsxiv -to -)
+paper_file=$(find $HOME/.local/share/wallpapers -type f | sed '/.git/d' | nsxiv -to - || exit 1)
 
 xwallpaper --stretch $paper_file
 wal -i $paper_file
