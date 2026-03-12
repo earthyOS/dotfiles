@@ -7,15 +7,13 @@ syncthing --no-browser &
 mullvad-vpn &
 dwmblocks &
 xrdb $HOME/.Xresources &
-xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x277 --rotate normal --output DP-1 --off --output HDMI-2 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-2 --off
+xrandr --output DP1 --off --output DP2 --off --output HDMI1 --mode 1920x1080 --pos 0x239 --rotate normal --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output VGA1 --off --output VIRTUAL1 --off
 picom -b
 dunst &
 setxkbmap -layout us,ru -variant ,phonetic -option grp:alt_shift_toggle &
 
 # Start pipewire:
-pipewire &
-/usr/bin/pipewire-pulse &
-/usr/bin/wireplumber &
+systemctl --user restart pipewire pipewire-pulse wireplumber &
 
 # Wallpaper & Theming
 loadwallpaper &
